@@ -1,5 +1,6 @@
 ---
-
+import ContactForm from '../components/ContactForm.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -8,9 +9,17 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="description" content="Contact us through our simple and elegant contact form." />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<title>Contact Form</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<h1>Contact Us</h1>
+			<p>Fill out the form below to get in touch with us. We'll get back to you as soon as possible.</p>
+			<ContactForm />
+		</main>
 	</body>
 </html>
