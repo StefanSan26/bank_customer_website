@@ -1,11 +1,12 @@
 ---
 import '../styles/form.css';
+import '../styles/result.css';
 ---
 
-<form class="contact-form">
+<form class="contact-form" id="predictionForm">
   <div class="form-group">
     <label for="CreditScore">Credit Score:</label>
-    <input type="text" id="CreditScore" name="CreditScore" required />
+    <input type="number" id="CreditScore" name="CreditScore" required />
   </div>
 
   <div class="form-group">
@@ -19,6 +20,7 @@ import '../styles/form.css';
       <option value="">Select</option>
       <option value="Male">Male</option>
       <option value="Female">Female</option>
+      <option value="Other">Other</option>
     </select>
   </div>
 
@@ -30,6 +32,11 @@ import '../styles/form.css';
   <div class="form-group">
     <label for="Tenure">Tenure:</label>
     <input type="number" id="Tenure" name="Tenure" required />
+  </div>
+
+  <div class="form-group">
+    <label for="Balance">Balance:</label>
+    <input type="number" id="Balance" name="Balance" required />
   </div>
 
   <div class="form-group">
@@ -66,4 +73,11 @@ import '../styles/form.css';
   </div>
 
   <button type="submit">Submit</button>
-</form> 
+</form>
+
+<div id="result" class="result-container" style="display: none;">
+  <h3>Prediction Result:</h3>
+  <p id="predictionText"></p>
+</div>
+
+<script src="../scripts/form.js"></script> 

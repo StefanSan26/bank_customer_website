@@ -32,7 +32,8 @@ select {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   outline: none;
   border-color: rgb(var(--accent));
   box-shadow: 0 0 0 3px rgba(var(--accent), 0.1);
@@ -40,7 +41,8 @@ textarea:focus {
 }
 
 input:hover,
-textarea:hover {
+textarea:hover,
+select:hover {
   border-color: #cbd5e1;
 }
 
