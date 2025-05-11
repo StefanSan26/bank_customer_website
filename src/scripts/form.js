@@ -16,12 +16,12 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
   };
 
   try {
-    const response = await fetch('http://localhost:80/predict', {
+    const response = await fetch('https://bank-customer-churn-1837dedb6265.herokuapp.com/predict', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'Origin': 'http://localhost:4321'
+        'Origin': 'https://bank-customer-churn-1837dedb6265.herokuapp.com/'
       },
       mode: 'cors',
       credentials: 'include',

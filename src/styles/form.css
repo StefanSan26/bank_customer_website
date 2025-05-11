@@ -29,6 +29,7 @@ select {
   font-size: 1rem;
   transition: all 0.2s ease;
   background: #f8fafc;
+  box-sizing: border-box;
 }
 
 input:focus,
