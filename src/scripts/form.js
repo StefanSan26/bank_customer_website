@@ -16,15 +16,12 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
   };
 
   try {
-    const response = await fetch('https://bank-customer-churn-1837dedb6265.herokuapp.com/predict', {
+    const response = await fetch('/api/proxy', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'Origin': 'https://bank-customer-website.vercel.app'
+        'Accept': 'application/json'
       },
-      mode: 'no-cors',
-      credentials: 'include',
       body: JSON.stringify(formData)
     });
 
