@@ -20,9 +20,9 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'X-API-Key': import.meta.env.VITE_API_KEY
       },
-      mode: 'no-cors',
       body: JSON.stringify(formData)
     });
 
