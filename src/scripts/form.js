@@ -16,7 +16,7 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
   };
 
   try {
-    const response = await fetch('/api/proxy', {
+    const response = await fetch('/api/proxy.json', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
