@@ -16,7 +16,7 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
   };
 
   try {
-    const response = await fetch('/api/predict', {
+    const response = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent('https://bank-customer-churn-1837dedb6265.herokuapp.com/predict'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
