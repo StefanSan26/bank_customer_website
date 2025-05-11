@@ -21,6 +21,8 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
+        'Accept': 'application/json',
+        'Origin': 'https://bank-customer-churn-1837dedb6265.herokuapp.com/'
       },
       body: JSON.stringify(formData)
     });
