@@ -23,7 +23,7 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
         'Accept': 'application/json',
         'Origin': 'https://bank-customer-website.vercel.app'
       },
-      mode: 'cors',
+      mode: 'no-cors',
       credentials: 'include',
       body: JSON.stringify(formData)
     });
