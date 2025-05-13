@@ -21,7 +21,6 @@ document.getElementById('predictionForm').addEventListener('submit', async (e) =
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-        'X-API-Key': import.meta.env.VITE_API_KEY
       },
       body: JSON.stringify(formData)
     });

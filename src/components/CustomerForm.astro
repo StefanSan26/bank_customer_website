@@ -1,82 +1,83 @@
 ---
-import '../styles/form.css';
-import '../styles/result.css';
+import "../styles/form.css";
+import "../styles/result.css";
 ---
 
 <form class="contact-form" id="predictionForm">
-  <div class="form-group">
-    <label for="CreditScore">Credit Score:</label>
-    <input type="number" id="CreditScore" name="CreditScore" required />
-  </div>
+    <div class="form-group">
+        <label for="CreditScore">Credit Score (300-850)</label>
+        <input type="number" id="CreditScore" name="CreditScore" required />
+    </div>
 
-  <div class="form-group">
-    <label for="Geography">Geography:</label>
-    <input type="text" id="Geography" name="Geography" required />
-  </div>
+    <div class="form-group">
+        <label for="Geography">Geography</label>
+        <select id="Geography" name="Geography" required>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="Germany">Germany</option>
+        </select>
+    </div>
 
-  <div class="form-group">
-    <label for="Gender">Gender:</label>
-    <select id="Gender" name="Gender" required>
-      <option value="">Select</option>
-      <option value="Male">Male</option>
-      <option value="Female">Female</option>
-    </select>
-  </div>
+    <div class="form-group">
+        <label for="Gender">Gender</label>
+        <select id="Gender" name="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
 
-  <div class="form-group">
-    <label for="Age">Age:</label>
-    <input type="number" id="Age" name="Age" required />
-  </div>
+    <div class="form-group">
+        <label for="Age">Age</label>
+        <input id="Age" name="Age" required />
+    </div>
 
-  <div class="form-group">
-    <label for="Tenure">Tenure:</label>
-    <input type="number" id="Tenure" name="Tenure" required />
-  </div>
+    <div class="form-group">
+        <label for="Tenure">Tenure (Years)</label>
+        <input type="number" id="Tenure" name="Tenure" required />
+    </div>
 
-  <div class="form-group">
-    <label for="Balance">Balance:</label>
-    <input type="number" id="Balance" name="Balance" required />
-  </div>
+    <div class="form-group">
+        <label for="Balance">Balance (USD)</label>
+        <input id="Balance" name="Balance" required />
+    </div>
 
-  <div class="form-group">
-    <label for="NumOfProducts">Number of Products:</label>
-    <input type="number" id="NumOfProducts" name="NumOfProducts" required />
-  </div>
+    <div class="form-group">
+        <label for="NumOfProducts">Number of Products</label>
+        <input type="number" id="NumOfProducts" name="NumOfProducts" required />
+    </div>
 
-  <div class="form-group">
-    <label for="HasCrCard">Has Credit Card:</label>
-    <select id="HasCrCard" name="HasCrCard" required>
-      <option value="">Select</option>
-      <option value="1">Yes</option>
-      <option value="0">No</option>
-    </select>
-  </div>
+    <div class="form-group">
+        <label for="HasCrCard">Has Credit Card (USD)</label>
+        <select id="HasCrCard" name="HasCrCard" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
 
-  <div class="form-group">
-    <label for="IsActiveMember">Is Active Member:</label>
-    <select id="IsActiveMember" name="IsActiveMember" required>
-      <option value="">Select</option>
-      <option value="1">Yes</option>
-      <option value="0">No</option>
-    </select>
-  </div>
+    <div class="form-group">
+        <label for="IsActiveMember">Is Active Member</label>
+        <select id="IsActiveMember" name="IsActiveMember" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+    </div>
 
-  <div class="form-group">
-    <label for="EstimatedSalary">Estimated Salary:</label>
-    <input type="number" id="EstimatedSalary" name="EstimatedSalary" required />
-  </div>
+    <div class="form-group">
+        <label for="EstimatedSalary">Estimated Salary</label>
+        <input id="EstimatedSalary" name="EstimatedSalary" required />
+    </div>
 
-  <div class="form-group">
-    <label for="Surname">Surname:</label>
-    <input type="text" id="Surname" name="Surname" required />
-  </div>
+    <div class="form-group">
+        <label for="Surname">Surname:</label>
+        <input type="text" id="Surname" name="Surname" required />
+    </div>
 
-  <button type="submit">Submit</button>
+    <button type="submit">Submit</button>
 </form>
 
 <div id="result" class="result-container" style="display: none;">
-  <h3>Prediction Result:</h3>
-  <p id="predictionText"></p>
+    <h3>Prediction Result:</h3>
+    <p id="predictionText"></p>
 </div>
 
-<script src="../scripts/form.js"></script> 
+<script src="../scripts/form.js"></script>
