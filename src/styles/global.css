@@ -9,8 +9,22 @@
     white 60%
   );
   --background: #f8fafc;
+  --background-form: #d8dde2;
   --text: #1e293b;
   --text-light: #64748b;
+}
+
+:root.dark-theme {
+  --background: #0f172a;
+  --background-form: #303c58;
+  --text: #f1f5f9;
+  --text-light: #94a3b8;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    rgb(var(--accent-dark)) 60%
+  );
 }
 
 body {
